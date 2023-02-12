@@ -6,3 +6,4 @@
 - Pnpm
 - Eslint
 - Prettier
+- Commitlint
