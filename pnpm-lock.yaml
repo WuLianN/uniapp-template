@@ -12,7 +12,6 @@ specifiers:
   '@dcloudio/uni-h5': 3.0.0-alpha-3061620221230002
   '@dcloudio/uni-mp-weixin': 3.0.0-alpha-3061620221230002
   '@dcloudio/uni-stacktracey': 3.0.0-alpha-3061620221230002
-  '@dcloudio/uni-ui': ^1.4.26
   '@dcloudio/vite-plugin-uni': 3.0.0-alpha-3061620221230002
   '@typescript-eslint/eslint-plugin': ^5.51.0
   '@typescript-eslint/parser': ^5.51.0
@@ -37,7 +36,6 @@ dependencies:
   '@dcloudio/uni-components': 3.0.0-alpha-3061620221230002
   '@dcloudio/uni-h5': 3.0.0-alpha-3061620221230002_vue@3.2.47
   '@dcloudio/uni-mp-weixin': 3.0.0-alpha-3061620221230002_vue@3.2.47
-  '@dcloudio/uni-ui': 1.4.26
   vue: 3.2.47
 
 devDependencies:
@@ -837,10 +835,6 @@ packages:
       - supports-color
       - ts-node
       - vue
-    dev: false
-
-  /@dcloudio/uni-ui/1.4.26:
-    resolution: {integrity: sha512-JpYXNi9WEmFeTcF6EWrksrMqA0HEl76nxW/Imd0PW1qm/7TORAGSpvMmEDYrMQ3vIbRQFV+n6bhiJIWi34u/5Q==}
     dev: false
 
   /@dcloudio/vite-plugin-uni/3.0.0-alpha-3061620221230002_vite@4.0.4+vue@3.2.47:
