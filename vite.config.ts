@@ -1,18 +1,20 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
 import { resolve } from 'path'
 import { viteMockServe } from 'vite-plugin-mock'
 
-console.info(resolve(__dirname, 'src/mock'))
-
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => {
+export default defineConfig(({ command, mode }) => {
+  const root = process.cwd()
+  const env = loadEnv(mode, root)
+  const { VITE_USE_MOCK } = env
+
   return {
     plugins: [
       uni(),
       viteMockServe({
         mockPath: 'src/mock',
-        localEnabled: command === 'serve'
+        localEnabled: VITE_USE_MOCK === 'true' && command === 'serve'
       })
     ],
     resolve: {
