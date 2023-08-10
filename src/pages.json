@@ -37,6 +37,14 @@
           "path": "pages/map"
         }
       ]
+    },
+    {
+      "root": "sub-packages/poster",
+      "pages": [
+        {
+          "path": "pages/poster"
+        }
+      ]
     }
   ],
   "globalStyle": {

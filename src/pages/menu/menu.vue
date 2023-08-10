@@ -14,6 +14,11 @@
 <script setup>
 const list = [
   {
+    name: '海报',
+    icon: '',
+    url: '/sub-packages/poster/pages/poster'
+  },
+  {
     name: '地图',
     icon: 'map',
     url: '/sub-packages/statistics/pages/map'
@@ -23,6 +28,11 @@ const list = [
     icon: 'flag',
     url: '/sub-packages/statistics/pages/chart'
   },
+  {
+    name: '非媒体文件上传',
+    icon: 'flag',
+    url: '/pages/non-media-upload/non-media-upload'
+  }
 ]
 
 function go(url) {
